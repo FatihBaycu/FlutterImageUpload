@@ -1,16 +1,15 @@
-# image_upload3
+# Image Upload From Gallery
 
-A new Flutter project.
+Image upload from gallery to  Backend
+
+## Dependencies
+
+  - image_picker: ^0.8.4+1
+  - http: ^0.13.3
+  - dio: ^4.0.0
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Image upload from gallery to Dot.Net Backend (it doesn't matter which backend you use)
+- Note the variable names. check backend variable names must have the same variable names
