@@ -80,14 +80,16 @@ class _MyHomePageState extends State<MyHomePage> {
       String fileName=image!.path.split("/").last;
       print(fileName);
       FormData formData=new FormData.fromMap({
+        //backend variableName - 1 /imagePath=>IMAGE
         "imagePath":
         await MultipartFile.fromFile(image!.path,filename: fileName,
             contentType: MediaType("image","jpg")),
         "type":"image/jpg",
+        //backend variableName - 2 /carId=> Car ID
         "carId":4
       });
 
-      String accessToken="eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTUxMiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJlbWFpbCI6ImZhdGloLmJheWN1QGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJGYXRpaCBCYXljdSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6ImFjdGl2ZSIsIm5iZiI6MTYzMzI3Njg1MCwiZXhwIjoxNjMzMjkxMjUwLCJpc3MiOiJlbmdpbkBlbmdpbi5jb20iLCJhdWQiOiJlbmdpbkBlbmdpbi5jb20ifQ.dSIVSIBxkFnCQEs9_HvCjhJBSUdtbhI19Enex8uv4AEYYgjznC8oLlix4HfW2J6LItiiGFpvJ5eGOhulS7gIvw";
+      String accessToken="ACCESS_TOKEN";
 
 
       Response response=await dio.post(
